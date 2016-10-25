@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Memfis Login and Registration Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+	function newParty() {
+		var partyObject = new Object();
+		partyObject.pname = document.getElementById("pname").value;
+		partyObject.pdate = document.getElementById("pdate").value;
+		partyObject.ptime = document.getElementById("ptime").value;
+		partyObject.ploc = document.getElementById("ploc").value;
+		partyObject.pmem = document.getElementById("pmem").value;
+		partyObject.ppay = document.getElementById("ppay").value;
+		partyObject.premarks = document.getElementById("premarks").value;
+		var newParty1 = JSON.stringify(partyObject);
+		$.ajax({
+			url : "http://localhost:8080/addParty",
+			type : "POST",
+			contentType : "application/json",
+			async : true,
+			crossDomain : true,
+			data : newParty1,
+
+			success : function(result) {
+				if (result == "Y") {
+					alert("添加成功！");
+				} else {
+					alert("添加失败！");
+				}
+			},
+			error : function(XMLHttpRequest, textStatus, error) {
+				alert("操作异常：" + textStatus);
+			}
+		});
+
+	}
+</script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Party</a>
+		</div>
+		<!-- /navbar-inner-->
+	</div>
+	<!-- /navbar-->
+
+	<div class="container">
+		<legend>Create a Party now!</legend>
+		<div class="body">
+			<label for="pname"> Party 名称: </label><input id="pname"
+				name="pname" type="text" maxlength="20" /><br /> <label
+				for="pdate"> 日期: </label> <input id="pdate" name="pdate"
+				type="text" onBlur="checkDate()" /> <label for="ptime">
+				时间: </label><input id="ptime" name="ptime" type="text" maxlength="20"
+				onBlur="vali()" /> <label for="ploc"> 地点: </label> <input
+				id="ploc" name="ploc" type="text" maxlength="20" /> <label
+				for="pmem"> 成员: </label><input id="pmem" name="pmem"
+				type="text" maxlength="5" onBlur="check()" /> <label for="ppay">
+				付款:</label> <select id="ppay" class="span2">
+				<option>AA</option>
+				<option>I Pay</option>
+				<option>No Cost</option>
+			</select> <label for="premarks"> 备注: </label><input id="premarks"
+				name="premarks" type="text" maxlength="100" />
+		</div>
+		<div class="footer">
+			<button onclick="newParty()" class="btn btn-success">保存</button>
+			<button onclick="location.href='BootstrapLoginPage.html'" class="btn">返回</button>
+		</div>
+		
+</body>
+</html>

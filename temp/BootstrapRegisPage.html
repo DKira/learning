@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Memfis Login and Registration Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script>
+	function moveon() {
+		var answer = confirm("是否跳转到登陆页面？");
+		if (answer)
+			window.location = "BootstrapLoginPage.html";
+	}
+	/* 密码一致性确认 */
+	function checkPwdSame() {
+		var pwd = document.getElementById("registerPwd").value;
+		var repwd = document.getElementById("registerPwdConfirm").value;
+		if (pwd == repwd) {
+			checkRegister();
+		} else {
+			alert("两次密码不一致");
+		}
+	}
+	/* 注册  */
+	function checkRegister() {
+		var userObject = new Object();
+		userObject.loginId = document.getElementById("registerId").value;
+		userObject.loginPwd = document.getElementById("registerPwd").value;
+		var newUser = JSON.stringify(userObject);
+		$.ajax({
+			url : "http://localhost:8080/checkRegister",
+			type : "POST",
+			contentType : "application/json",
+			async : true,
+			crossDomain : true,
+			data : newUser,
+
+			success : function(result) {
+				if (result == "YES") {
+					alert("注册成功！");
+					document.getElementById("registerId").value = "";
+					document.getElementById("registerPwd").value = "";
+					document.getElementById("registerPwdConfirm").value = "";
+					moveon();
+				} else {
+					alert("注册失败！");
+				}
+			},
+			error : function(XMLHttpRequest, textStatus, error) {
+				alert("textStatus" + textStatus);
+			}
+		});
+	}
+	/* 密码一致性确认 */
+	function checkNewPwdSame() {
+		var pwd = document.getElementById("loginNewPwd").value;
+		var repwd = document.getElementById("loginNewPwdConfirm").value;
+		if (pwd == repwd) {
+			midifyPassword();
+		} else {
+			alert("两次密码不一致");
+		}
+	}
+	/* 修改密码  */
+	function midifyPassword() {
+		var userObject = new Object();
+		userObject.loginId = document.getElementById("loginId").value;
+		userObject.loginPwd = document.getElementById("loginPwd").value;
+		userObject.loginNewPwd = document.getElementById("loginNewPwd").value;
+		var newUser = JSON.stringify(userObject);
+		$.ajax({
+			url : "http://localhost:8080/modifyPassword",
+			type : "POST",
+			contentType : "application/json",
+			async : true,
+			crossDomain : true,
+			data : newUser,
+
+			success : function(result) {
+				if (result == "YES") {
+					alert("修改成功！");
+					document.getElementById("loginId").value = "";
+					document.getElementById("loginPwd").value = "";
+					document.getElementById("loginNewPwd").value = "";
+					document.getElementById("loginNewPwdConfirm").value = "";
+				} else {
+					alert("修改失败！");
+				}
+			},
+			error : function(XMLHttpRequest, textStatus, error) {
+				alert("操作异常：" + textStatus);
+			}
+		});
+	}
+</script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" href="#">Login and Registration Demo</a>
+		</div>
+		<!-- /navbar-inner-->
+	</div>
+	<!-- /navbar-->
+
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span3 offset1">
+				<h1 class="offset1">注册</h1>
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<div class="offset2">
+							<label>用户名：</label><input id="registerId" name="registerId"
+								type="text" class="input"> <label>密码：</label><input
+								id="registerPwd" name="registerPwd" type="password"
+								class="input"><label>确认密码：</label><input
+								id="registerPwdConfirm" name="registerPwdConfirm"
+								type="password" class="input"> <br>
+							<button class="btn btn-success" onclick="checkPwdSame()">注册</button>
+						</div>
+					</div>
+					<!-- end of row -->
+				</div>
+				<!-- end of container -->
+
+				<h1 class="offset1">修改密码</h1>
+				<div class="container-fluid">
+					<div class="row-fluid">
+						<div class="offset2">
+							<label>用户名：</label><input id="loginId" name="loginId" type="text"
+								class="input"> <label>原密码：</label><input id="loginPwd"
+								name="loginPwd" type="password" class="input"> <label>新密码：</label><input
+								id="loginNewPwd" name="loginNewPwd" type="password"
+								class="input"> <label>确认新密码：</label><input
+								id="loginNewPwdConfirm" name="loginNewPwdConfirm"
+								type="password" class="input"> <br>
+							<button class="btn btn-success" onclick="checkNewPwdSame()">确认修改</button>
+							<button onclick="location.href='BootstrapLoginPage.html'" class="btn">返回</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="span7" style="padding-top:5%">
+				<ul class="thumbnails">
+					<li class="span8 offset2"><a class="thumbnail"> <img
+							src="C:\Users\KD90303\Documents\workspace-sts-3.7.2.RELEASE\demo3\WebContent\investments\memfis\html\seaimg\3.jpg"
+							alt="">
+					</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>
