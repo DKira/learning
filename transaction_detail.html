@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>详情</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/mui.css" rel="stylesheet">
+<style>
+.mui-bar-nav {
+	background: linear-gradient(to bottom, #00bdf2 0, #0079b1 60%, #00538b 100%);
+}
+
+.font-white {
+	color: #FFFFFF;
+}
+
+.mui-bar .mui-btn-link {
+	color: #FFFFFF;
+}
+
+.mui-card-content {
+	background-color: #FFFFFF;
+	padding: 10px 0px 10px 10px;
+}
+
+.panel-text{
+	text-align:center;
+}
+
+.panel-border-right{
+	border-right: 1px solid #908a8a;
+}
+
+.mui-row{
+	margin-top: 10px;
+}
+
+.text-margin-top{
+	margin-top: 10px;
+}
+p{
+	margin-bottom: 0px;
+}
+</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left font-white"></a>
+		<h1 class="mui-title font-white">详情</h1>
+	</header>
+	<div class="mui-content">
+		<div class="mui-card-content">
+			<p>2017/03/27&nbsp;更新</p>
+			<div class="mui-row">
+				<div class="mui-col-xs-6 panel-text panel-border-right">
+					<p style="font-size:1.5em;color:#000000">$69,900</p>
+					<p class="text-margin-top">投资参考总净值</p>
+				</div>
+				
+				<div class="mui-col-xs-6 panel-text">
+					<p style="font-size:1.5em;color:#ef5c5c">$2,900</p>
+					<p class="text-margin-top">参考总盈利</p>
+				</div>
+			</div>
+			
+			<div id="mainChart" style="width:auto;height:200px;"></div>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript" src="js/mui.js"></script>
+	<script type="text/javascript" src="js/echarts.js"></script>
+	
+	<script type="text/javascript">
+	
+	var mainChart = document.getElementById("mainChart");
+	//总初始化图表
+	var mainInitChart = echarts.init(mainChart);
+	
+	mainInitChart.showLoading('default',{
+		  text: '加载中',
+		  color: '#ff9800',
+		  textColor: '#ff9800',
+		  maskColor: 'rgba(255, 255, 255, 0.9)',
+		  zlevel: 0
+	});
+	//alert("ready");
+	//setTimeout(test(),1000);
+	function stopLoading(){
+		mainInitChart.hideLoading();
+	}
+	
+	mainInitChart.setOption({
+		
+		title:{
+			show:false,
+			text:'title',
+			textStyle:{
+				color:'#000000',
+				fontSize:18
+			},
+			left:'50%',
+			textAlign:'center',//水平对齐
+			textBaseline:'middle',//垂直对齐
+			itemGap:10,//主副标题之间的距离
+			subtext:'subtitle',
+			backgroundColor:'transparent'
+		},
+		legend:{
+			show:false,
+			left:'auto',//图表到容器上下左右的距离
+			top:'auto',
+			right:'auto',
+			bottom:'auto',
+			width:'auto',
+			height:'auto',
+			orient:'horizontal',
+			align:'auto',
+			itemGap:10,
+			data: [{
+			    name: '系列1',
+			    // 强制设置图形为圆。
+			    icon: 'circle',
+			    // 设置文本为红色
+			    textStyle: {
+			        color: '#ff9800'
+			    }
+			}],
+			backgroundColor:'transparent'
+		},
+		grid:{
+			show:true,
+			left:'10%',//绘图网格到容器上下左右的距离
+			top:'10%',
+			right:'5%',
+			bottom:'10%',
+			width:'auto',
+			height:'auto',
+			backgroundColor:'transparent',
+			borderColor:'transparent'
+		},
+		chartType: 'line',
+		xAxis: [{
+			gridIndex: 0,//坐标所在绘图网格0
+			position: 'bottom',
+			type:'category',/*重要,常用的有value,category,time.category要额外定义data属性*/
+			//name:'时间',
+			axisLine:{//坐标轴轴线
+				show:true,
+				onZero:false,
+				lineStyle:{
+					type:'solid'
+				}
+			},
+			axisTick:{//坐标轴刻度
+				show:false,
+			},
+			data:['8/6', '8/13', '8/20', '8/27', '9/3', '9/10', '9/17']/*选择category的类型所需要额外提供的标签集合，他们将会被依次放到X轴上，每个占一格*/
+		}],
+		yAxis: [{
+			gridIndex: 0,//坐标所在绘图网格0
+			position: 'left',
+			type:'value',
+			//name:'百分比',
+			axisLine:{//坐标轴轴线
+				show:true,
+				onZero:true,
+				lineStyle:{
+					type:'solid'
+				}
+			},
+			axisTick:{//坐标轴刻度
+				show:false,
+			},
+			axisLabel:{//坐标轴刻度标签
+				formatter:'{value} %'
+			},
+			splitArea: {
+				show: false
+			},
+			splitNumber:2//Y轴分隔段数
+		}],
+		series: [{
+			name:'系列1',
+			type:'line',
+			data:[-1, 2, -4, -3, -7, -6, 2]
+		}],
+		color:['#ff9800'],
+		backgroundColor:'#FFFFFF'
+		
+
+	});
+	
+
+	
+	
+	
+	</script>
+</body>
+</html>

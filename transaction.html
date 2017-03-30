@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transaction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/mui.css" rel="stylesheet">
+<style>
+.mui-bar-nav {
+	background: linear-gradient(to bottom, #00bdf2 0, #0079b1 60%, #00538b 100%);
+}
+
+.font-white {
+	color: #FFFFFF;
+}
+
+.mui-bar .mui-btn-link {
+	color: #FFFFFF;
+}
+
+.mui-card-content {
+	background-color: #FFFFFF;
+}
+
+.list-title {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+.list-row {
+	font-size: 0.75em;
+	display: block;
+	text-align: center;
+}
+
+.list-margin {
+	margin-top: 10px;
+}
+
+.list-link-color{
+	color: #0079b1;
+}
+</style>
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<a
+			class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left font-white"></a>
+		<h1 class="mui-title font-white">资产查询</h1>
+<!-- 		<button class="mui-btn mui-btn-link mui-pull-right">重置卡</button> -->
+	</header>
+	<div class="mui-content">
+
+		<div class="mui-card-content">
+			<div class="mui-card-content-inner" style="text-align: center;">
+				<p style="margin-bottom: 30px;">总资产(元)</p>
+				<p style="color: #de4b02; font-size: 3em;">12345.67</p>
+			</div>
+			<div class="mui-card-footer">
+				<a class="mui-card-link">投资风险属性: 中</a>
+			</div>
+		</div>
+		<div class="mui-card-content">
+			<div class="mui-card-content-inner">
+				<div>
+					<span>持仓(2)</span><span class="mui-pull-right">总市值:723845.55</span>
+				</div>
+			</div>
+		</div>
+		<div class="mui-card-content">
+			<div class="mui-row">
+				<div class="mui-row" style="background-color: #ecf7f6">
+					<div class="mui-col-xs-3 list-title">
+						<span>基金/市值</span>
+					</div>
+					<div class="mui-col-xs-3 list-title">
+						<span>持仓/可卖</span>
+					</div>
+					<div class="mui-col-xs-3 list-title">
+						<span>现价/成本</span>
+					</div>
+					<div class="mui-col-xs-2 list-title">
+						<span>盈亏</span>
+					</div>
+					<div class="mui-col-xs-1 list-title">
+						<span>详情</span>
+					</div>
+				</div>
+				<div class="mui-row">
+					<div class="mui-col-xs-3 list-margin">
+						<span class="list-row">16846</span> <span class="list-row">119106.67</span>
+					</div>
+					<div class="mui-col-xs-3 list-margin">
+						<span class="list-row">1000</span> <span class="list-row">661</span>
+					</div>
+					<div class="mui-col-xs-3 list-margin">
+						<span class="list-row">1.26481</span> <span class="list-row">1.15893</span>
+					</div>
+					<div class="mui-col-xs-2 list-margin">
+						<span class="list-row">127.96%</span>
+					</div>
+					<div class="mui-col-xs-1 list-margin">
+						<span class="list-row list-link-color" onclick="gotoDetail()">查看</span>
+					</div>
+				</div>
+
+				<div class="mui-row">
+					<div class="mui-col-xs-3 list-margin">
+						<span class="list-row">15996</span> <span class="list-row">165264.46</span>
+					</div>
+					<div class="mui-col-xs-3 list-margin">
+						<span class="list-row">1000</span> <span class="list-row">722</span>
+					</div>
+					<div class="mui-col-xs-3 list-margin">
+						<span class="list-row">1.24351</span> <span class="list-row">1.18462</span>
+					</div>
+					<div class="mui-col-xs-2 list-margin">
+						<span class="list-row">112.45%</span>
+					</div>
+					<div class="mui-col-xs-1 list-margin">
+						<span class="list-row  list-link-color" onclick="gotoDetail()">查看</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/mui.js"></script>
+	<script>
+		function gotoDetail() {
+			mui.openWindow({
+				id: 'detail',
+				url: 'transaction_detail.html',
+				show: {
+					aniShow: 'fade-in',
+					duration: 300
+				},
+				waiting: {
+					autoShow: false
+				}
+			});
+		}
+	</script>
+</body>
+</html>
