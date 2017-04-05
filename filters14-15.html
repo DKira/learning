@@ -127,6 +127,7 @@
 								$scope.forwardPageBtn = false;
 							} else {
 								$scope.nextPageBtn = false;
+								$scope.forwardPageBtn = false;
 							}
 							console.log($scope.products.length
 									- $scope.limitVal);
@@ -140,6 +141,7 @@
 								$scope.nextPageBtn = false;
 							} else {
 								$scope.forwardPageBtn = false;
+								$scope.nextPageBtn = false;
 							}
 							console.log($scope.pageNum);
 
@@ -178,9 +180,9 @@
 						<td class="text-right">{{p.price | currency }}</td>
 					</tr>
 					<button class="btn btn-primary" ng-disabled="forwardPageBtn"
-						ng-click="forwardPage()">上一页</button>
+						ng-click="forwardPage()">脡脧脪禄脪鲁</button>
 					<button class="btn btn-primary" ng-disabled="nextPageBtn"
-						ng-click="nextPage()">下一页</button>
+						ng-click="nextPage()">脧脗脪禄脪鲁</button>
 				</tbody>
 			</table>
 		</div>
