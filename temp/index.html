@@ -40,7 +40,7 @@
 							CCY: "f2"
 						}]
 					}, {
-						"id": "456",
+						"id": "789",
 						"radioName": "jkl",
 						"dropdown": [{
 							CCY: "j1"
@@ -69,10 +69,17 @@
 				}
 				
 				$scope.saveRadioResult2 = function(item){
-					$scope.radioResultStorage2 = item.dropdown;
+					$scope.radioResultStorage2 = item;
 					console.log($scope.radioResultStorage2);
 				}
+						
+				$scope.saveSelectModel = function(selectNewModel){
+					$scope.selectModelValue = selectNewModel;
+					$scope.selectScreen(3);
+				}
+				
 			});
+			
 		</script>
 	</head>
 

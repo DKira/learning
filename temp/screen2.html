@@ -7,11 +7,12 @@
 		<td><input type="radio" name="radio" ng-click="saveRadioResult2(item)">{{item.radioName}}</td>
 	</tr>
 	<tr>
-		<select ng-model="for" ng-options="item.CCY for item in radioResultStorage2">
-			<option value="">(chose)</option>
+		<select ng-model="selectNewModel" ng-options="item.CCY for item in radioResultStorage2.dropdown" >
+			<option>(chose)</option>
 		</select>
 	</tr>
-	
+	<span ng-bind="selectNewModel.CCY"></span>
 </table>
+<button ng-click="saveSelectModel(selectNewModel)">Next</button>
 <button ng-click="selectScreen(1)">Back</button>
 
