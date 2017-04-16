@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="exampleApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>test</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script>
+			angular.module("exampleApp", []).controller("defaultCtrl", function($scope) {
+				$scope.radioBtnData = {
+					"data": [{
+							"id": "123",
+							"txt": "123",
+							"title": "123"
+						},
+						{
+							"id": "456",
+							"txt": "456",
+							"title": "456"
+						}
+					]
+				}
+
+				$scope.radioBtnData2 = {
+					"data": [{
+						"id": "123",
+						"radioName": "asd",
+						"dropdown": [{
+							CCY: "a1"
+						}, {
+							CCY: "a2"
+						}]
+					}, {
+						"id": "456",
+						"radioName": "fgh",
+						"dropdown": [{
+							CCY: "f1"
+						}, {
+							CCY: "f2"
+						}]
+					}, {
+						"id": "456",
+						"radioName": "jkl",
+						"dropdown": [{
+							CCY: "j1"
+						}, {
+							CCY: "j2"
+						}]
+					}]
+				}
+
+				$scope.currentScreen = "screen1.html";
+				$scope.selectScreen = function(screenNum) {
+					if(screenNum == 3) {
+						$scope.currentScreen = "screen3.html";
+					} else if(screenNum == 2) {
+						$scope.currentScreen = "screen2.html";
+					} else {
+						$scope.currentScreen = "screen1.html";
+					}
+				}
+				$scope.getScreenNum = function() {
+					return $scope.currentScreen;
+				}
+
+				$scope.saveRadioResult = function(item) {
+					$scope.radioResultStorage = item;
+				}
+				
+				$scope.saveRadioResult2 = function(item){
+					$scope.radioResultStorage2 = item.dropdown;
+					console.log($scope.radioResultStorage2);
+				}
+			});
+		</script>
+	</head>
+
+	<body ng-controller="defaultCtrl">
+		<div>
+			<h2>Test:</h2>
+		</div>
+
+		<div ng-include="getScreenNum()"></div>
+	</body>
+
+</html>

@@ -1,0 +1,17 @@
+<h3>222222222</h3>
+
+<span ng-bind="radioResultStorage.txt"></span>
+<span ng-bind="radioResultStorage.title"></span>
+<table>
+	<tr ng-repeat="item in radioBtnData2.data">
+		<td><input type="radio" name="radio" ng-click="saveRadioResult2(item)">{{item.radioName}}</td>
+	</tr>
+	<tr>
+		<select ng-model="for" ng-options="item.CCY for item in radioResultStorage2">
+			<option value="">(chose)</option>
+		</select>
+	</tr>
+	
+</table>
+<button ng-click="selectScreen(1)">Back</button>
+

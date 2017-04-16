@@ -1,0 +1,9 @@
+<h3>111111111</h3>
+<table>
+	<tr ng-repeat="item in radioBtnData.data">
+		<td><input type="radio" name="radio" ng-click="saveRadioResult(item)">{{item.txt}}</td>
+		<td><span ng-bind="item.title"></span></td>
+	</tr>
+
+</table>
+<button ng-click="selectScreen(2)">Next</button>
