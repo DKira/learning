@@ -1,0 +1,943 @@
+<main class="container-fluid" style="padding: 0px; margin-top: 53px;">
+			<div class="flex-container">
+				<div id="nav-container"></div>				
+				<div class="flex-column" id="module-section-area" style="margin-left: 0px;">
+					<div id="module-section"><button class="close-icon-rp" aria-hidden="true" type="button" data-dismiss="modal"></button>
+
+<div class="row rp-container">
+    <section class="col-xs-10 col-xs-offset-1 no-divider">
+        <h2 class="top-padding" id="nonCorpRpHeading">RISK PROFILE</h2>
+        <h2 class="top-padding" id="corpRpHeading" style="display: none;"></h2>
+        <div class="row" id="risk-level" style="display: none;"><div class="row">
+    <div class="col-xs-10 col-xs-offset-1 risk-levels">
+    </div>
+</div>
+</div>
+    </section>
+
+    <section class="col-xs-10 col-xs-offset-1" id="aboutYouRP">
+        <h3>About You</h3>
+        <div id="about-you"><div class="row">
+<div class="col-xs-10 col-xs-offset-1 about-you-sg-gcg"></div>
+    <div class="col-xs-10 col-xs-offset-1 about-you-sg-gcg">
+
+            <dl>
+                <dt>Name :</dt>
+                <dd>MX HXNXOXO  MXNXRX</dd>
+
+                <dt>Customer Number</dt>
+                <dd>7725407</dd>
+				
+                <dt>Relationship Name</dt>
+                <dd>MXSXEX  SXSXNX &amp;XOX IXWXN KXSXMX </dd>
+
+                <dt>Relationship Number</dt>
+                <dd>9114496</dd>
+				
+                <dt>ID Type</dt>
+                <dd>IC</dd>
+
+                <dt>ID Number</dt>
+                <dd>XXXXXXXXXXXX0001</dd>
+
+            </dl>
+            <dl>
+				<dt>Address</dt>
+                <dd>
+                    JX SXTXIX RX/XWX 0X0X0X0, JX. TX. SXMXTXPXNX, JXGXKXRXA, JXKXRXA BXRXT, INDONESIA, 14410<br>
+                </dd>
+                <dt id="cust-dob">Date Of Birth</dt>
+                <dd id="cust-dobval">
+                  1960-XX-XX
+                </dd>
+                <dt id="marital-status">Marital Status</dt>
+                <dd id="marital-statusval">
+                    MARRIED
+                </dd>
+                <dt>Nationality</dt>
+                <dd>
+                    INDONESIA
+                </dd>                
+            </dl>
+        </div>
+	</div></div>
+    </section>
+
+    <!-- The following sections all make up a single form -->
+  
+        <section class="col-xs-10 col-xs-offset-1" id="financial-situation"><h3 class="collapse-toggle" aria-expanded="true" aria-controls="questions-100" data-toggle="collapse" data-target="#questions-100">
+    Financial Situation
+    <button class="collapse-toggle" aria-expanded="true" aria-controls="questions-100" data-toggle="collapse" data-target="#questions-100">
+        <span>Show / hide this section</span>
+    </button>
+</h3>
+<div class="row collapse in" id="questions-100" aria-expanded="true">
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">1. 
+        What is your total liquid net worth? (If this is a joint relationship, what is the combined liquid asset of Yours and the Joint Investor's)
+Current accounts   savings   investments* - total loans outstanding = your current liquid net worth.
+*Within Citibank and outside, held in common by all account holders. Please do not include real estate or the value of any businesses you own.
+    </label>
+				<div class="clearfix">
+			  	   <div class="row rp-textInput">
+			  	   		<div class="col-xs-6">
+			                  <input name="255" class="form-control citi-validate-amount numCheck liqNetInput" id="liqNetWorthInput" type="text" maxlength="19" value="461,563,123.00" question-id="255" data-precision="2" questiontypeindicator="Y">
+			             </div>
+			          	<div class="col-xs-4" style="margin-top: 10px;">( IDR )</div>
+			  	   </div>
+			  		<div class="rp-warn-note">
+							  		Note: This information may be used by the bank in any concentration assessment conducted. If details are not provided, then concentration assessment will be done using assets held within Citibank.
+						  		</div>
+			       </div>
+</div>
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">2. 
+        What is your employment status?
+    </label>
+		<div class="radio-response-blk" data-score="">
+			<div class="iradio"><input name="256" class="response-radio" id="256" style="position: absolute; opacity: 0;" type="radio" value="414-Radio--1" question-id="256" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Self-employed or business owner</span>
+		</div>
+		<div class="radio-response-blk" data-score="">
+			<div class="iradio checked"><input name="256" class="response-radio" id="256" style="position: absolute; opacity: 0;" type="radio" checked="checked" value="415-Radio--2" question-id="256" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Employee</span>
+		</div>
+		<div class="radio-response-blk" data-score="">
+			<div class="iradio"><input name="256" class="response-radio" id="256" style="position: absolute; opacity: 0;" type="radio" value="416-Radio--3" question-id="256" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Retired</span>
+		</div>
+		<div class="radio-response-blk" data-score="">
+			<div class="iradio"><input name="256" class="response-radio" id="256" style="position: absolute; opacity: 0;" type="radio" value="417-Radio--4" question-id="256" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Student</span>
+		</div>
+		<div class="radio-response-blk" data-score="">
+			<div class="iradio"><input name="256" class="response-radio" id="256" style="position: absolute; opacity: 0;" type="radio" value="418-Radio--5" question-id="256" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Unemployed</span>
+		</div>
+		<div class="radio-response-blk" data-score="0">
+			<div class="iradio"><input name="256" class="response-radio" id="256" style="position: absolute; opacity: 0;" type="radio" value="419-Radio-0-6" question-id="256" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Home maker</span>
+		</div>
+</div>
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">3. 
+        Please select all the Reference Currencies you may consider for investments in this account/relationship(s). Reference Currencies: The currencies in which a Client is prepared to invest without being concerned about the risk of currency fluctuations and its impact on the value of their investments translated into another currency.
+    </label>
+					<div class="col-xs-6 checkBox-dropdown rp-check-dropdown">
+						<div class="form-group">
+							<select name="Reference Currency " title="Reference Currency" class="form-control selectpicker bs-select-hidden" id="currencyPreferenceId" multiple="multiple" data-max-options="6">
+						<option class="refCurrency" value="420-CheckBox-1-IDR" selected="" question-id="257">IDR</option>
+				
+						<option class="refCurrency" value="421-CheckBox-2-US Dollar" selected="" question-id="257">US Dollar</option>
+				
+						<option class="refCurrency" value="422-CheckBox-3-Pound Sterling" question-id="257">Pound Sterling</option>
+				
+						<option class="refCurrency" value="423-CheckBox-4-Euro" question-id="257">Euro</option>
+				
+						<option class="refCurrency" value="424-CheckBox-5-Australian Dollar" selected="" question-id="257">Australian Dollar</option>
+				
+						<option class="refCurrency" value="425-CheckBox-6-Yen" selected="" question-id="257">Yen</option>
+							</select><div class="btn-group bootstrap-select show-tick form-control"><button title="IDR, US Dollar, Australian Dollar, Yen" class="btn dropdown-toggle btn-default" type="button" data-toggle="dropdown" data-id="currencyPreferenceId"><span class="filter-option pull-left">IDR, US Dollar, Australian Dollar, Yen</span>&nbsp;<span class="caret"></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li class="selected" data-original-index="0"><a tabindex="0" class="refCurrency" data-tokens="null"><span class="text">IDR</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li class="selected" data-original-index="1"><a tabindex="0" class="refCurrency" data-tokens="null"><span class="text">US Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="refCurrency" data-tokens="null"><span class="text">Pound Sterling</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="refCurrency" data-tokens="null"><span class="text">Euro</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li class="selected" data-original-index="4"><a tabindex="0" class="refCurrency" data-tokens="null"><span class="text">Australian Dollar</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li class="selected" data-original-index="5"><a tabindex="0" class="refCurrency" data-tokens="null"><span class="text">Yen</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div>
+						</div>
+					</div>
+					<div class="rp-warn-note">
+						  			Note: This information may be used by the bank in determining the product rating for certain Investment Products which are being bought in currencies not selected above.
+						  		</div>
+				
+</div>
+</div>
+</section>
+
+        <section class="col-xs-10 col-xs-offset-1" id="risk-capacity"><h3 class="collapse-toggle" aria-expanded="true" aria-controls="questions-10-20" data-toggle="collapse" data-target="#questions-10-20">
+    Risk Capacity
+    <button class="collapse-toggle" aria-expanded="true" aria-controls="questions-10-20" data-toggle="collapse" data-target="#questions-10-20">
+        <span>Show / hide this section</span>
+    </button>
+</h3>
+<div class="row collapse in" id="questions-10-20" aria-expanded="true">
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">4. 
+        What is the age of the eldest holder in this account/relationship(s)?
+    </label>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio checked"><input name="1" disabled="" class="response-radio" id="1" style="position: absolute; opacity: 0;" type="radio" checked="checked" value="1-Radio-6-1" question-id="1" questiontypeindicator="A"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Under 65</span>
+		</div>
+		<div class="radio-response-blk" data-score="5">
+			<div class="iradio"><input name="1" disabled="" class="response-radio" id="1" style="position: absolute; opacity: 0;" type="radio" value="2-Radio-5-2" question-id="1" questiontypeindicator="A"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Between 65 and 79</span>
+		</div>
+		<div class="radio-response-blk" data-score="4">
+			<div class="iradio"><input name="1" disabled="" class="response-radio" id="1" style="position: absolute; opacity: 0;" type="radio" value="3-Radio-4-3" question-id="1" questiontypeindicator="A"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">80 or over</span>
+		</div>
+</div>
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">5. 
+        How long would you consider investing to achieve your financial goals? These goals could include children¡¯s education, retirement planning or others. (If this is a joint relationship, what is the overall time horizon that You and Joint Investor have in mind?)
+    </label>
+		<div class="radio-response-blk" data-score="4">
+			<div class="iradio"><input name="2" class="response-radio" id="2" style="position: absolute; opacity: 0;" type="radio" value="4-Radio-4-1" question-id="2" questiontypeindicator="T"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Up to 3 Years</span>
+		</div>
+		<div class="radio-response-blk" data-score="5">
+			<div class="iradio"><input name="2" class="response-radio" id="2" style="position: absolute; opacity: 0;" type="radio" value="5-Radio-5-2" question-id="2" questiontypeindicator="T"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Up to 7 Years</span>
+		</div>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio"><input name="2" class="response-radio" id="2" style="position: absolute; opacity: 0;" type="radio" value="6-Radio-6-3" question-id="2" questiontypeindicator="T"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Up to 10 Years</span>
+		</div>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio"><input name="2" class="response-radio" id="2" style="position: absolute; opacity: 0;" type="radio" value="507-Radio-6-4" question-id="2" questiontypeindicator="T"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Up to 15 Years</span>
+		</div>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio checked"><input name="2" class="response-radio" id="2" style="position: absolute; opacity: 0;" type="radio" checked="checked" value="508-Radio-6-5" question-id="2" questiontypeindicator="T"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Up to 30 Years</span>
+		</div>
+</div>
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">6. 
+        Percentage of your liquid net worth you'd like to invest in this account/relationship(s). (If this is joint relationship, what percentage of total liquid net worth that You and Joint Investor investing?)
+    </label>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio checked"><input name="3" class="response-radio" id="3" style="position: absolute; opacity: 0;" type="radio" checked="checked" value="7-Radio-6-1" question-id="3" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Less than 25%</span>
+		</div>
+		<div class="radio-response-blk" data-score="5">
+			<div class="iradio"><input name="3" class="response-radio" id="3" style="position: absolute; opacity: 0;" type="radio" value="8-Radio-5-2" question-id="3" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Between 25% and 50%</span>
+		</div>
+		<div class="radio-response-blk" data-score="4">
+			<div class="iradio"><input name="3" class="response-radio" id="3" style="position: absolute; opacity: 0;" type="radio" value="9-Radio-4-3" question-id="3" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">More than 50%</span>
+		</div>
+</div>
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">7. 
+        Complete this Sentence:
+I am relying on ______ of the money I/We have invested in this account/relationship(s), including any earnings, to cover my/our spending this year (If this is a joint relationship, how much do You and the Joint Investor would rely on the joint relationship?).
+
+    </label>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio checked"><input name="4" class="response-radio" id="4" style="position: absolute; opacity: 0;" type="radio" checked="checked" value="10-Radio-6-1" question-id="4" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Less than 25%</span>
+		</div>
+		<div class="radio-response-blk" data-score="4">
+			<div class="iradio"><input name="4" class="response-radio" id="4" style="position: absolute; opacity: 0;" type="radio" value="11-Radio-4-2" question-id="4" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Between 25% and 50%</span>
+		</div>
+		<div class="radio-response-blk" data-score="3">
+			<div class="iradio"><input name="4" class="response-radio" id="4" style="position: absolute; opacity: 0;" type="radio" value="12-Radio-3-3" question-id="4" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">More than 50%</span>
+		</div>
+</div>
+</div>
+</section>
+
+        <section class="col-xs-10 col-xs-offset-1" id="risk-attitude"><h3 class="collapse-toggle" aria-expanded="true" aria-controls="questions-30" data-toggle="collapse" data-target="#questions-30">
+    Risk Attitude
+    <button class="collapse-toggle" aria-expanded="true" aria-controls="questions-30" data-toggle="collapse" data-target="#questions-30">
+        <span>Show / hide this section</span>
+    </button>
+</h3>
+<div class="row collapse in" id="questions-30" aria-expanded="true">
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">8. 
+        Which of the following statements best describes your investment objectives for the account(s) in this relationship? (If this is a joint relationship, which of the following statement best describes Your investment objective and Joint Investor?)
+    </label>
+		<div class="radio-response-blk" data-score="1">
+			<div class="iradio"><input name="5" class="response-radio" id="5" style="position: absolute; opacity: 0;" type="radio" value="13-Radio-1-1" question-id="5" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Capital Preservation - A preference for preservation/ relative safety of invested capital with returns in line with short-term money market rates.</span>
+		</div>
+		<div class="radio-response-blk" data-score="2">
+			<div class="iradio"><input name="5" class="response-radio" id="5" style="position: absolute; opacity: 0;" type="radio" value="14-Radio-2-2" question-id="5" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Defensive - A preference for preservation of capital and the generation of regular income slightly above short-term money market rates.</span>
+		</div>
+		<div class="radio-response-blk" data-score="2">
+			<div class="iradio"><input name="5" class="response-radio" id="5" style="position: absolute; opacity: 0;" type="radio" value="15-Radio-2-3" question-id="5" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Income Oriented - A preference for investments primarily intended to generate income rather than achieve appreciation of capital.</span>
+		</div>
+		<div class="radio-response-blk" data-score="3">
+			<div class="iradio"><input name="5" class="response-radio" id="5" style="position: absolute; opacity: 0;" type="radio" value="16-Radio-3-4" question-id="5" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Income &amp; Growth - A preference for investments or investment strategies that aim to provide a balance of income and capital appreciation.</span>
+		</div>
+		<div class="radio-response-blk" data-score="4">
+			<div class="iradio checked"><input name="5" class="response-radio" id="5" style="position: absolute; opacity: 0;" type="radio" checked="checked" value="17-Radio-4-5" question-id="5" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Growth Oriented - A preference for investments or investment strategies that typically aim to provide mostly capital appreciation with less emphasis on regular income returns.</span>
+		</div>
+		<div class="radio-response-blk" data-score="4">
+			<div class="iradio"><input name="5" class="response-radio" id="5" style="position: absolute; opacity: 0;" type="radio" value="18-Radio-4-6" question-id="5" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">High Growth - A preference for investments or investment strategies that seek exclusively to provide aggressive capital appreciation over time.</span>
+		</div>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio"><input name="5" class="response-radio" id="5" style="position: absolute; opacity: 0;" type="radio" value="19-Radio-6-7" question-id="5" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Market Speculation - A preference for investments or trading strategies that seek exclusively to provide aggressive capital appreciation through exploiting short-term pricing anomalies among financial assets.</span>
+		</div>
+</div>
+<div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">9. 
+        Which of the following statements best describes the amount of risk fluctuation you will tolerate in the value of your investments? (If this is a joint relationship, which of the following statements best describe You and Joint Investor ability to tolerate different types of risk?)
+    </label>
+		<div class="radio-response-blk" data-score="1">
+			<div class="iradio"><input name="6" class="response-radio" id="6" style="position: absolute; opacity: 0;" type="radio" value="20-Radio-1-1" question-id="6" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Safety Oriented - Investors who hope to experience minimal fluctuations in portfolio value over a rolling one year period and are generally only willing to buy investments that are priced frequently and have a high certainty of being able to sell quickly (less than a week) at a price close to the recently observed market value.</span>
+		</div>
+		<div class="radio-response-blk" data-score="2">
+			<div class="iradio"><input name="6" class="response-radio" id="6" style="position: absolute; opacity: 0;" type="radio" value="21-Radio-2-2" question-id="6" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Conservative - Investors who hope to experience no more than small portfolio losses over a rolling one-year period and are generally only willing to buy investments that are priced frequently and have a high certainty of being able to sell quickly (less than a week) although the investor may at times buy individual investments that entail greater risk.</span>
+		</div>
+		<div class="radio-response-blk" data-score="3">
+			<div class="iradio"><input name="6" class="response-radio" id="6" style="position: absolute; opacity: 0;" type="radio" value="22-Radio-3-3" question-id="6" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Moderate - Investors who hope to experience no more than moderate portfolio losses over a rolling one year period in attempting to enhance longer-term performance and are generally willing to buy investments that are priced frequently and have a high certainty of being able to sell quickly (less than a week) in stable markets although the investor may at times buy individual investments that entail greater risk and are less liquid.</span>
+		</div>
+		<div class="radio-response-blk" data-score="4">
+			<div class="iradio"><input name="6" class="response-radio" id="6" style="position: absolute; opacity: 0;" type="radio" value="23-Radio-4-4" question-id="6" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Aggressive - Investors who are prepared to accept greater portfolio losses over a rolling one year period while attempting to enhance longer-term performance and are willing to buy investments or enter into contracts that may be difficult to sell or close within a short time-frame or have an uncertain realizable value at any given time.</span>
+		</div>
+		<div class="radio-response-blk" data-score="5">
+			<div class="iradio"><input name="6" class="response-radio" id="6" style="position: absolute; opacity: 0;" type="radio" value="24-Radio-5-5" question-id="6" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Very Aggressive - Investors who are prepared to accept large portfolio losses up to the value of their entire portfolio over a one year period and are generally willing to buy investments or enter into contracts that may be difficult to sell or close for an extended period or have an uncertain realizable value at any given time.</span>
+		</div>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio checked"><input name="6" class="response-radio" id="6" style="position: absolute; opacity: 0;" type="radio" checked="checked" value="25-Radio-6-6" question-id="6" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Most Aggressive - Investors who are prepared to put their entire portfolio at risk over a one year period, and may even be required to provide additional capital to make up for portfolio losses beyond the amount initially invested, are generally willing to buy investments or enter into contracts that may be difficult to sell or close for an extended period or have an uncertain realizable value at any given time.</span>
+		</div>
+</div>
+</div>
+</section>
+
+		<section class="col-xs-10 col-xs-offset-1 divider-top-rp" id="investmentObjectiveRp" style="display: none;"><h3 class="collapse-toggle" aria-expanded="false" aria-controls="questions-80" data-toggle="collapse" data-target="#questions-80">
+    Investment Objective and Risk Appetite
+    <button class="collapse-toggle" aria-expanded="false" aria-controls="questions-80" data-toggle="collapse" data-target="#questions-80">
+        <span>Show / hide this section</span>
+    </button>
+</h3>
+<div class="collapse row" id="questions-80">
+</div>
+</section>
+        <section class="col-xs-10 col-xs-offset-1" id="kneMainRp">
+            <h3 class="collapse-toggle" aria-expanded="true" aria-controls="questions-ke" data-toggle="collapse" data-target="#questions-ke">
+                Knowledge and Experience
+                <button class="collapse-toggle" aria-expanded="true" aria-controls="questions-ke" data-toggle="collapse" data-target="#questions-ke">
+                    <span>Show / hide this section</span>
+                </button>
+            </h3>
+            <div class="row collapse in" id="questions-ke" aria-expanded="true">
+                <div id="knowledge-experience-intro"><div class="form-group col-xs-8 rp-question">
+    <label class="rp-q-label rp-ques-label" for="question-undefined">10. 
+        Describe your investment knowledge and experience (If this is joint relationship, which of the following statements best describe knowledge and experience of You and Joint Investor?):
+    </label>
+		<div class="radio-response-blk" data-score="3">
+			<div class="iradio"><input name="10" class="response-radio" id="10" style="position: absolute; opacity: 0;" type="radio" value="32-Radio-3-1" question-id="10" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Limited - I/We have little or no knowledge of investments outside of savings accounts or time deposits.</span>
+		</div>
+		<div class="radio-response-blk" data-score="4">
+			<div class="iradio"><input name="10" class="response-radio" id="10" style="position: absolute; opacity: 0;" type="radio" value="33-Radio-4-2" question-id="10" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Moderate - I/We have general knowledge and understanding of investments that aren't savings accounts or time deposits, and I'm/We're aware of the general risks related to investing.</span>
+		</div>
+		<div class="radio-response-blk" data-score="6">
+			<div class="iradio checked"><input name="10" class="response-radio" id="10" style="position: absolute; opacity: 0;" type="radio" checked="checked" value="34-Radio-6-3" question-id="10" questiontypeindicator="N"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> <span class="response-txt">Extensive - I/We have extensive knowledge and understanding of investments, and I'm/We're experienced enough to make my/our own investment decisions.</span>
+		</div>
+</div>
+</div>
+                <div class="col-xs-12" id="knowledge-experience"><div class="clearfix">
+     <div class="col-lg-2 col-md-2 checkboxCommon">
+         <div class="form-group">
+             <label class="transRm-label" for="">Transacting RM </label>
+         </div>
+     </div>
+     <div class="col-lg-3 col-md-3">
+         <div class="form-group">
+             <input class="form-control checkAlpanumeric  TransRm" type="text" value="" data-mandatoryerrormsg="">
+         </div>
+     </div>
+     <div class="col-md-3 text-center">
+        <button class="btn btn-primary rm-submit" type="submit">SUBMIT</button>
+    </div>
+</div>
+<fieldset>
+    <legend>Please indicate which of the following products you are familiar with</legend>
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="width: 50%;">Product Category</th>
+                <th>Knowledge and/or Experience</th>
+				<th>Source Of Knwoledge</th>
+				<th></th>
+                <th>No Of Transactions</th>
+            </tr>
+        </thead>
+        <!-- "Non-complex" section -->
+        <tbody>
+            <tr>
+                <th colspan="5">Tier1</th>
+            </tr>
+			<tr>
+				<th colspan="5">Managed Products</th>
+			</tr>
+			<tr>
+				<td>Money Market &amp; Certificate of Deposits</td>
+				<td>
+					<div class="icheckbox checked"><input class="knowledge-experience" id="MMDLearntFromOutside" style="position: absolute; opacity: 0;" type="checkbox" checked="" product-category="MMD" is-knowledgeexperience="true"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>
+				</td>
+				<td colspan="2"></td>
+			</tr>
+			<tr class="collapse" id="MMD">
+				<td colspan="2"></td>
+				<td>
+					<table class="table-style">
+						<tbody><tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MMD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MMD" style="position: absolute; opacity: 0;" type="radio" product-category="MMD" code-desc="Professional Knowledge" product-tier="Tier1" code-value="PK"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Knowledge
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MMD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MMD" style="position: absolute; opacity: 0;" type="radio" product-category="MMD" code-desc="Past Investment Experience" product-tier="Tier1" code-value="PE"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Past Investment Experience
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MMD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MMD" style="position: absolute; opacity: 0;" type="radio" product-category="MMD" code-desc="Other sources" product-tier="Tier1" code-value="OT"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Other sources
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MMD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MMD" style="position: absolute; opacity: 0;" type="radio" product-category="MMD" code-desc="Professional Education" product-tier="Tier1" code-value="ED"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Education
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MMD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MMD" style="position: absolute; opacity: 0;" type="radio" product-category="MMD" code-desc="Education by your Citi Relationship Manager" product-tier="Tier1" code-value="RM"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Education by your Citi Relationship Manager
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="form-control others-MMD otherChinaField" id="otherDetailsFiled" type="text" placeholder="" value="" data-prod-cat="MMD"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Mutual Fund/ Unit Trust/ Exchange Traded Funds</td>
+				<td>
+					<div class="icheckbox checked"><input class="knowledge-experience" id="MFDLearntFromOutside" style="position: absolute; opacity: 0;" type="checkbox" checked="" product-category="MFD" is-knowledgeexperience="true"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>
+				</td>
+				<td colspan="2"></td>
+			</tr>
+			<tr class="collapse" id="MFD">
+				<td colspan="2"></td>
+				<td>
+					<table class="table-style">
+						<tbody><tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MFD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MFD" style="position: absolute; opacity: 0;" type="radio" product-category="MFD" code-desc="Professional Knowledge" product-tier="Tier1" code-value="PK"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Knowledge
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MFD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MFD" style="position: absolute; opacity: 0;" type="radio" product-category="MFD" code-desc="Past Investment Experience" product-tier="Tier1" code-value="PE"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Past Investment Experience
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MFD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MFD" style="position: absolute; opacity: 0;" type="radio" product-category="MFD" code-desc="Other sources" product-tier="Tier1" code-value="OT"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Other sources
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MFD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MFD" style="position: absolute; opacity: 0;" type="radio" product-category="MFD" code-desc="Professional Education" product-tier="Tier1" code-value="ED"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Education
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MFD" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MFD" style="position: absolute; opacity: 0;" type="radio" product-category="MFD" code-desc="Education by your Citi Relationship Manager" product-tier="Tier1" code-value="RM"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Education by your Citi Relationship Manager
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="form-control others-MFD otherChinaField" id="otherDetailsFiled" type="text" placeholder="" value="" data-prod-cat="MFD"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th colspan="5">Capital Market Products</th>
+			</tr>
+			<tr>
+				<td>Bonds</td>
+				<td>
+					<div class="icheckbox checked"><input class="knowledge-experience" id="BNDLearntFromOutside" style="position: absolute; opacity: 0;" type="checkbox" checked="" product-category="BND" is-knowledgeexperience="true"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>
+				</td>
+				<td colspan="2"></td>
+			</tr>
+			<tr class="collapse" id="BND">
+				<td colspan="2"></td>
+				<td>
+					<table class="table-style">
+						<tbody><tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="BND" class="source-of-knowledge" id="sourceOfKnowledgeNRI-BND" style="position: absolute; opacity: 0;" type="radio" product-category="BND" code-desc="Professional Knowledge" product-tier="Tier1" code-value="PK"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Knowledge
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="BND" class="source-of-knowledge" id="sourceOfKnowledgeNRI-BND" style="position: absolute; opacity: 0;" type="radio" product-category="BND" code-desc="Past Investment Experience" product-tier="Tier1" code-value="PE"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Past Investment Experience
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="BND" class="source-of-knowledge" id="sourceOfKnowledgeNRI-BND" style="position: absolute; opacity: 0;" type="radio" product-category="BND" code-desc="Other sources" product-tier="Tier1" code-value="OT"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Other sources
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="BND" class="source-of-knowledge" id="sourceOfKnowledgeNRI-BND" style="position: absolute; opacity: 0;" type="radio" product-category="BND" code-desc="Professional Education" product-tier="Tier1" code-value="ED"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Education
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="BND" class="source-of-knowledge" id="sourceOfKnowledgeNRI-BND" style="position: absolute; opacity: 0;" type="radio" product-category="BND" code-desc="Education by your Citi Relationship Manager" product-tier="Tier1" code-value="RM"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Education by your Citi Relationship Manager
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="form-control others-BND otherChinaField" id="otherDetailsFiled" type="text" placeholder="" value="" data-prod-cat="BND"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>Dual Currency Accounts or Premium Accounts</td>
+				<td>
+					<div class="icheckbox checked"><input class="knowledge-experience" id="PDSLearntFromOutside" style="position: absolute; opacity: 0;" type="checkbox" checked="" product-category="PDS" is-knowledgeexperience="true"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>
+				</td>
+				<td colspan="2"></td>
+			</tr>
+			<tr class="collapse" id="PDS">
+				<td colspan="2"></td>
+				<td>
+					<table class="table-style">
+						<tbody><tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="PDS" class="source-of-knowledge" id="sourceOfKnowledgeNRI-PDS" style="position: absolute; opacity: 0;" type="radio" product-category="PDS" code-desc="Professional Knowledge" product-tier="Tier1" code-value="PK"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Knowledge
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="PDS" class="source-of-knowledge" id="sourceOfKnowledgeNRI-PDS" style="position: absolute; opacity: 0;" type="radio" product-category="PDS" code-desc="Past Investment Experience" product-tier="Tier1" code-value="PE"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Past Investment Experience
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="PDS" class="source-of-knowledge" id="sourceOfKnowledgeNRI-PDS" style="position: absolute; opacity: 0;" type="radio" product-category="PDS" code-desc="Other sources" product-tier="Tier1" code-value="OT"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Other sources
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="PDS" class="source-of-knowledge" id="sourceOfKnowledgeNRI-PDS" style="position: absolute; opacity: 0;" type="radio" product-category="PDS" code-desc="Professional Education" product-tier="Tier1" code-value="ED"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Education
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="PDS" class="source-of-knowledge" id="sourceOfKnowledgeNRI-PDS" style="position: absolute; opacity: 0;" type="radio" product-category="PDS" code-desc="Education by your Citi Relationship Manager" product-tier="Tier1" code-value="RM"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Education by your Citi Relationship Manager
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="form-control others-PDS otherChinaField" id="otherDetailsFiled" type="text" placeholder="" value="" data-prod-cat="PDS"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th colspan="5">Insurance Products</th>
+			</tr>
+			<tr>
+				<td>Investment Linked Insurance</td>
+				<td>
+					<div class="icheckbox checked"><input class="knowledge-experience" id="ILPLearntFromOutside" style="position: absolute; opacity: 0;" type="checkbox" checked="" product-category="ILP" is-knowledgeexperience="true"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>
+				</td>
+				<td colspan="2"></td>
+			</tr>
+			<tr class="collapse" id="ILP">
+				<td colspan="2"></td>
+				<td>
+					<table class="table-style">
+						<tbody><tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="ILP" class="source-of-knowledge" id="sourceOfKnowledgeNRI-ILP" style="position: absolute; opacity: 0;" type="radio" product-category="ILP" code-desc="Professional Knowledge" product-tier="Tier1" code-value="PK"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Knowledge
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="ILP" class="source-of-knowledge" id="sourceOfKnowledgeNRI-ILP" style="position: absolute; opacity: 0;" type="radio" product-category="ILP" code-desc="Past Investment Experience" product-tier="Tier1" code-value="PE"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Past Investment Experience
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="ILP" class="source-of-knowledge" id="sourceOfKnowledgeNRI-ILP" style="position: absolute; opacity: 0;" type="radio" product-category="ILP" code-desc="Other sources" product-tier="Tier1" code-value="OT"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Other sources
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="ILP" class="source-of-knowledge" id="sourceOfKnowledgeNRI-ILP" style="position: absolute; opacity: 0;" type="radio" product-category="ILP" code-desc="Professional Education" product-tier="Tier1" code-value="ED"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Education
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="ILP" class="source-of-knowledge" id="sourceOfKnowledgeNRI-ILP" style="position: absolute; opacity: 0;" type="radio" product-category="ILP" code-desc="Education by your Citi Relationship Manager" product-tier="Tier1" code-value="RM"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Education by your Citi Relationship Manager
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="form-control others-ILP otherChinaField" id="otherDetailsFiled" type="text" placeholder="" value="" data-prod-cat="ILP"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+        </tbody>
+        <!-- "Complex" section -->
+        <tbody>
+            <tr>
+                <th colspan="5">Tier2</th>
+            </tr>
+			<tr>
+				<th colspan="5">Capital Market Products</th>
+			</tr>
+			<tr>
+				<td>Structured Products (Deposits &amp; Notes) / Equity Linked Notes and Accounts / Exchange Traded Notes</td>
+				<td>
+					<div class="icheckbox"><input class="knowledge-experience" id="STNLearntFromOutside" style="position: absolute; opacity: 0;" type="checkbox" product-category="STN" is-knowledgeexperience="true"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>
+				</td>
+				<td>
+					<input disabled="" class="STN form-control" id="showProductKnwNRI-STN" type="text" placeholder="" value="">
+				</td>
+				<td class="arrow showProductKnwNRI" data-product-category="STN">
+					<button class="STN srcKnw-btn collapse-toggle collapsed addPopUp-disabled" aria-expanded="false" aria-controls="" data-toggle="collapse" data-target="#STN" product-category="STN">
+						<span>Show / hide this section</span>
+					</button>
+				</td>
+				<td>
+					<input disabled="" class="ke-transaction trans-input num-only form-control" id="STNtransaction" type="text" value="" product-category="STN">
+				</td>
+			</tr>
+			<tr class="collapse" id="STN">
+				<td colspan="2"></td>
+				<td>
+					<table class="table-style">
+						<tbody><tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="STN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-STN" style="position: absolute; opacity: 0;" type="radio" product-category="STN" code-desc="Professional Knowledge" product-tier="Tier2" code-value="PK"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Knowledge
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="STN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-STN" style="position: absolute; opacity: 0;" type="radio" product-category="STN" code-desc="Past Investment Experience" product-tier="Tier2" code-value="PE"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Past Investment Experience
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="STN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-STN" style="position: absolute; opacity: 0;" type="radio" product-category="STN" code-desc="Other sources" product-tier="Tier2" code-value="OT"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Other sources
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="STN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-STN" style="position: absolute; opacity: 0;" type="radio" product-category="STN" code-desc="Professional Education" product-tier="Tier2" code-value="ED"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Education
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="STN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-STN" style="position: absolute; opacity: 0;" type="radio" product-category="STN" code-desc="Education by your Citi Relationship Manager" product-tier="Tier2" code-value="RM"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Education by your Citi Relationship Manager
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="form-control others-STN otherChinaField" id="otherDetailsFiled" type="text" placeholder="" value="" data-prod-cat="STN"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th colspan="5">Insurance Products</th>
+			</tr>
+			<tr>
+				<td>Variable Annuity</td>
+				<td>
+					<div class="icheckbox"><input class="knowledge-experience" id="VANLearntFromOutside" style="position: absolute; opacity: 0;" type="checkbox" product-category="VAN" is-knowledgeexperience="true"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>
+				</td>
+				<td>
+					<input disabled="" class="VAN form-control" id="showProductKnwNRI-VAN" type="text" placeholder="" value="">
+				</td>
+				<td class="arrow showProductKnwNRI" data-product-category="VAN">
+					<button class="VAN srcKnw-btn collapse-toggle collapsed addPopUp-disabled" aria-expanded="false" aria-controls="" data-toggle="collapse" data-target="#VAN" product-category="VAN">
+						<span>Show / hide this section</span>
+					</button>
+				</td>
+				<td>
+					<input disabled="" class="ke-transaction trans-input num-only form-control" id="VANtransaction" type="text" value="" product-category="VAN">
+				</td>
+			</tr>
+			<tr class="collapse" id="VAN">
+				<td colspan="2"></td>
+				<td>
+					<table class="table-style">
+						<tbody><tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="VAN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-VAN" style="position: absolute; opacity: 0;" type="radio" product-category="VAN" code-desc="Professional Knowledge" product-tier="Tier2" code-value="PK"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Knowledge
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="VAN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-VAN" style="position: absolute; opacity: 0;" type="radio" product-category="VAN" code-desc="Past Investment Experience" product-tier="Tier2" code-value="PE"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Past Investment Experience
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="VAN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-VAN" style="position: absolute; opacity: 0;" type="radio" product-category="VAN" code-desc="Other sources" product-tier="Tier2" code-value="OT"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Other sources
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="VAN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-VAN" style="position: absolute; opacity: 0;" type="radio" product-category="VAN" code-desc="Professional Education" product-tier="Tier2" code-value="ED"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Education
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="VAN" class="source-of-knowledge" id="sourceOfKnowledgeNRI-VAN" style="position: absolute; opacity: 0;" type="radio" product-category="VAN" code-desc="Education by your Citi Relationship Manager" product-tier="Tier2" code-value="RM"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Education by your Citi Relationship Manager
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="form-control others-VAN otherChinaField" id="otherDetailsFiled" type="text" placeholder="" value="" data-prod-cat="VAN"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<th colspan="5">Portfolio Lending Products</th>
+			</tr>
+			<tr>
+				<td>Lending Secured by Investments</td>
+				<td>
+					<div class="icheckbox checked"><input class="knowledge-experience" id="MLTLearntFromOutside" style="position: absolute; opacity: 0;" type="checkbox" checked="" product-category="MLT" is-knowledgeexperience="true"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>
+				</td>
+				<td>
+					<input disabled="" class="MLT form-control" id="showProductKnwNRI-MLT" type="text" placeholder="" value="Education by your Citi Relationship Manager">
+				</td>
+				<td class="arrow showProductKnwNRI" data-product-category="MLT">
+					<button class="MLT srcKnw-btn collapse-toggle collapsed  " aria-expanded="false" aria-controls="" data-toggle="collapse" data-target="#MLT" product-category="MLT">
+						<span>Show / hide this section</span>
+					</button>
+				</td>
+				<td>
+					<input class="ke-transaction trans-input num-only form-control" id="MLTtransaction" type="text" value="25" product-category="MLT">
+				</td>
+			</tr>
+			<tr class="collapse" id="MLT">
+				<td colspan="2"></td>
+				<td>
+					<table class="table-style">
+						<tbody><tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MLT" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MLT" style="position: absolute; opacity: 0;" type="radio" product-category="MLT" code-desc="Professional Knowledge" product-tier="Tier2" code-value="PK"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Knowledge
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MLT" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MLT" style="position: absolute; opacity: 0;" type="radio" product-category="MLT" code-desc="Past Investment Experience" product-tier="Tier2" code-value="PE"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Past Investment Experience
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MLT" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MLT" style="position: absolute; opacity: 0;" type="radio" product-category="MLT" code-desc="Other sources" product-tier="Tier2" code-value="OT"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Other sources
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MLT" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MLT" style="position: absolute; opacity: 0;" type="radio" product-category="MLT" code-desc="Professional Education" product-tier="Tier2" code-value="ED"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Professional Education
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>
+									<div class="iradio"><input name="MLT" class="source-of-knowledge" id="sourceOfKnowledgeNRI-MLT" style="position: absolute; opacity: 0;" type="radio" product-category="MLT" code-desc="Education by your Citi Relationship Manager" product-tier="Tier2" code-value="RM"><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div>Education by your Citi Relationship Manager
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2"><input class="form-control others-MLT otherChinaField" id="otherDetailsFiled" type="text" placeholder="" value="" data-prod-cat="MLT"></td>
+						</tr>
+					</tbody></table>
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+        </tbody>
+    </table>
+    <div class="row">
+		<div class="col-md-12 col-lg-12">
+			<div class="form-group">
+				<div class="rp-rm-kande-check"> If you have indicated RM as a source of knowledge,please tick the box below to confirm that you were previously provided the Citi education materials by e-mail or print and that you are still sufficiently comfortable with your level of knowledge to conduct transactions for those products</div>
+				<div class="rp-rm-kande-check">
+				<div class="icheckbox"><input name="RMSelected" id="rmSelected" style="position: absolute; opacity: 0;" type="checkbox" value=""><ins class="iCheck-helper" style="background: rgb(255, 255, 255); margin: 0px; padding: 0px; border: 0px currentColor; border-image: none; left: 0%; top: 0%; width: 100%; height: 100%; display: block; position: absolute; opacity: 0;"></ins></div> &nbsp; <span class="checkBoxLabel" for="RMSelected">I have selected K based on RM's feedback</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</fieldset></div>
+            </div>
+        </section>
+
+        <!-- Hiding the Acknowledgement, Customer verification, Disclaimer - in Risk Profile -->
+<!--
+        <section class="col-xs-10 col-xs-offset-1">
+            <h3>
+                Acknowledgement
+                <button >
+                    <span>Show / hide this section</span>
+                </button>
+            </h3>
+            <div id="acknowledgement" class="collapse row">
+            -->
+                <!-- TODO: Create actual view to replace this text -->
+               <!-- <p class="col-xs-10 col-xs-offset-1"><em>[This section is still work-in-progress]</em></p> -->
+                <!-- End of dummy text that needs to be removed! -->
+            <!--</div>
+        </section>
+
+        <section class="col-xs-10 col-xs-offset-1">
+            <h3>
+                Customer verification
+                <button class="collapse-toggle" data-toggle="collapse" data-target="#customer-verification" aria-expanded="false" aria-controls="customer-verification">
+                    <span>Show / hide this section</span>
+                </button>
+            </h3>
+            <div id="customer-verification" class="collapse row"></div>
+        </section>
+
+        <section class="col-xs-10 col-xs-offset-1">
+            <h3>
+                Disclaimer
+                <button class="collapse-toggle" data-toggle="collapse" data-target="#remark" aria-expanded="false" aria-controls="remark">
+                    <span>Show / hide this section</span>
+                </button>
+            </h3>
+            <div class="collapse row" id="remark">
+                <p class="col-xs-10 col-xs-offset-1">Disclaimer content</p>
+            </div>
+        </section>
+-->
+        <div class="col-xs-10 col-xs-offset-1 form-footer clearBottom">
+            <input class="btn btn-primary" type="submit" value="CONTINUE">
+        </div>
+    
+
+    <!-- TODO: Re-enable this!
+    <section class="col-xs-10 col-xs-offset-1 no-divider">
+        <h3>Risk appendix</h3>
+        <div id="risk-appendix"></div>
+    </section>
+    -->
+</div>
+
+<!-- Source of Product Knowledge Pop Up -->
+<div id="sourceOfProductKnw"></div>
+</div>
+					<!-- Disclaimer for CBOL -->
+					<div class="disclaimer-footer-cbol" style="display: none;"></div>
+					<div id="errModal"><!--Error Popup Modal Window-->
+<div class="modal fade" id="modal-container-errorPopup" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<button class="icon close-icon" id="nj-error-modal-close" aria-hidden="true" type="button" data-dismiss="modal"></button>
+			<div class="panel-header">
+				<h2 class="text-center" id="popupHeaderTitle">
+				Message
+				</h2>
+			</div>
+			<div class="panel-body">
+				<div class="errorMessageData font-text-style" style="display: none;"></div>
+				<div class="staticErrorMessageData font-text-style">Service is not available temporarily. We are sorry about the inconvenience caused.</div>
+			</div>
+			<div class="btn-container-block">
+				<button class="btn btn-blk closeErrorPopup" id="no-btn" type="submit">OK</button>
+				<button class="btn btn-primary closeErrorPopup" id="yes-btn" style="display: none;" type="submit">YES</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<form name="eclipseFrameForm" id="eclipseFrameForm" action="" method="post" target="EclipseLiteFrame">
+	</form>
+</div>
+				</div>	
+			</div>	
+		    </main>
