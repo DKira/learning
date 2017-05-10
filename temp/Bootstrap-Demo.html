@@ -1,139 +1,149 @@
 <!DOCTYPE html>
-<html ng-app="Demo">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>客户风险测评</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Demo</title>
-<script type="text/javascript" src="angularjs/angular.min.js"></script>
-<link href="css/bootstrapModified.css" rel="stylesheet">
-<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/mui.css" rel="stylesheet">
+
+<style>
+.mui-bar-nav {
+	background: linear-gradient(to bottom, #00bdf2 0, #0079b1 60%, #00538b 100%);
+}
+
+.mui-table-view-divider {
+	color: #020202;
+	background-color: rgba(222, 222, 222, 0.72);
+}
+
+.mui-content>.mui-table-view:first-child {
+	margin-top: 0px;
+}
+
+.mui-btn-block {
+	padding: 5px 0;
+	border-radius: 0px !important;
+}
+
+.mui-btn-primary {
+	background-color: #1b6ec7;
+}
+
+.mui-table-view-cell:after {
+	left: 0px;
+}
+
+.selectItem{
+	background-color:rgba(0, 122, 255, 0.6)
+}
+
+</style>
 </head>
-<body ng-controller="RedirectController">
-	<div class="navbar navbar-inverse">
-		<a class="navbar-brand" href="#">Bootstrap Demo</a>
+<body>
+	<header class="mui-bar mui-bar-nav">
+		<h1 class="mui-title" style="color: #FFFFFF;">客户风险测评</h1>
+	</header>
+	<div id="option" class="mui-content">
+		<ul class="mui-table-view">
+			<li class="mui-table-view-divider"
+				style="padding-top: 16px; padding-bottom: 16px;">投资帐号:
+				******460</li>
+			<li class="mui-table-view-cell">请投资者对以下选项进行填写及选择（如无说明，均为单选）</li>
+
+			<li class="mui-table-view-divider">
+				1、最近您家庭预计进行证券投资的资金占家庭现有总资产（不含自住、自用房产及汽车等固定资产）的比例是：</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 70%以上</li>
+			<li class="mui-table-view-cell optional">B. 50%-70%</li>
+			<li class="mui-table-view-cell optional">C. 30%-50%</li>
+			<li class="mui-table-view-cell optional">D. 10%-30%</li>
+			<li class="mui-table-view-cell optional">E. 10%以下</li>
+			</div>
+			<li class="mui-table-view-divider">2、以下描述中何种符合您的实际情况：</li>
+			<div>
+			<li class="mui-table-view-cell optional">A.
+				现在或此前曾从事金融、经济或财会等与金融产品投资相关的工作超过两年</li>
+			<li class="mui-table-view-cell optional">B. 已取得金融、经济或财会等与金融产品投资相关专业学士以上学位
+			</li>
+			<li class="mui-table-view-cell optional">C.
+				取得证券从业资格、期货从业资格、注册会计师证书（CPA）或注册金融分析师证书（CFA）中的一项及以上</li>
+			<li class="mui-table-view-cell optional">D. 我不符合以上任何一项描述</li>
+			</div>
+			<li class="mui-table-view-divider">
+				3、过去一年时间内，您购买的不同金融产品（含同一类型的不同金融产品）的数量是：</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 5个以下</li>
+			<li class="mui-table-view-cell optional">B. 6至10个</li>
+			<li class="mui-table-view-cell optional">C. 11至15个</li>
+			<li class="mui-table-view-cell optional">D. 16个以上</li>
+			</div>
+			<li class="mui-table-view-divider">4、以下金融产品，您投资经验在两年以上的有：</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 银行存款</li>
+			<li class="mui-table-view-cell optional">B. 债券、货币市场基金、债券型基金或其他固定收益类产品</li>
+			<li class="mui-table-view-cell optional">C. 股票、混合型基金、偏股型基金、股票型基金等权益类投资品种</li>
+			<li class="mui-table-view-cell optional">D. 期货、融资融券</li>
+			<li class="mui-table-view-cell optional">E. 复杂金融产品或其他产品</li>
+			</div>
+			<li class="mui-table-view-divider">5、假设有两种不同的投资：投资A预期获得5%的收益，
+				又可能承担非常小的损失；投资B预期获得20%的收益， 但有可能面临25%甚至更高的亏损。您将您的投资资产分配为：</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 全部投资于A</li>
+			<li class="mui-table-view-cell optional">B. 大部分投资于A</li>
+			<li class="mui-table-view-cell optional">C. 两种投资各一半</li>
+			<li class="mui-table-view-cell optional">D. 大部分投资于B</li>
+			<li class="mui-table-view-cell optional">E. 全部投资于B</li>
+			</div>
+			<li class="mui-table-view-divider">6、您认为自己可以承受的最大投资损失是多少？</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 10%以内</li>
+			<li class="mui-table-view-cell optional">B. 10%-30%</li>
+			<li class="mui-table-view-cell optional">C. 30%-50%</li>
+			<li class="mui-table-view-cell optional">D. 超过50%</li>
+			</div>
+			<li class="mui-table-view-divider">7、您打算将自己的投资回报主要用于：</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 改善生活</li>
+			<li class="mui-table-view-cell optional">B. 个体生产经营或证券投资以外的投资行为</li>
+			<li class="mui-table-view-cell optional">C. 履行扶养、抚养或赡养义务</li>
+			<li class="mui-table-view-cell optional">D. 本人养老或医疗</li>
+			<li class="mui-table-view-cell optional">E. 偿讨债务</li>
+			</div>
+			<li class="mui-table-view-divider">8、您的年龄是：</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 18-30岁</li>
+			<li class="mui-table-view-cell optional">B. 31-40岁</li>
+			<li class="mui-table-view-cell optional">C. 41-50岁</li>
+			<li class="mui-table-view-cell optional">D. 51-60岁</li>
+			<li class="mui-table-view-cell optional">E. 超过60岁</li>
+			</div>
+			<li class="mui-table-view-divider">9、您用于证券投资的大部分资金不会用作其它用途的时间段为：
+			</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 短期——0到1年</li>
+			<li class="mui-table-view-cell optional">B. 中期——1到5年</li>
+			<li class="mui-table-view-cell optional">C. 长期——5年以上</li>
+			</div>
+			<li class="mui-table-view-divider">10、您打算重点投资于哪些种类的投资品种？</li>
+			<div>
+			<li class="mui-table-view-cell optional">A. 债券、货币市场基金、债券基金等固定收益类投资品种</li>
+			<li class="mui-table-view-cell optional">B. 股票、混合型基金、偏股型基金、股票型基金等权益类投资品种</li>
+			<li class="mui-table-view-cell optional">C. 期货、融资融券</li>
+			<li class="mui-table-view-cell optional">D. 其他产品</li>
+			</div>
+
+		</ul>
+		<button id="confirmBtn" class="mui-btn-block mui-btn-primary">确认</button>
 	</div>
-	<div class="panel panel-default row-fluid">
-		<div class="col-sm-6 col-md-4 col-lg-3 ">
-			<div class="thumbnail">
-				<a href="#" title="Bootstrap 编码规范"><img class="lazy"
-					src="seaimg/stickup.png"
-					width="500" height="150" ng-click="jump('BootstrapLoginPage.html')"></a>
-				<div class="caption">
-					<h3>
-						<a href="#" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。" ng-click="jump('BootstrapLoginPage.html')">Welcome
-						</a>
-					</h3>
-					<p>This is a module link to "Welcome" page and those context is
-						only use for site occupancy................</p>
-				</div>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-4 col-lg-3 ">
-			<div class="thumbnail">
-				<a href="#" title="Bootstrap 编码规范"><img class="lazy"
-					src="seaimg/stickup.png"
-					width="500" height="150"></a>
-				<div class="caption">
-					<h3>
-						<a href="#" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。">Insurance</a>
-					</h3>
-					<p>This is a module link to "Utility Bill Payment" page and
-						those context is only use for site occupancy.....</p>
-				</div>
-			</div>
-		</div>
 
-		<div class="col-sm-6 col-md-4 col-lg-3 ">
-			<div class="thumbnail">
-				<a href="#" title="Bootstrap 编码规范"><img class="lazy"
-					src="seaimg/stickup.png"
-					width="500" height="150"></a>
-				<div class="caption">
-					<h3>
-						<a href="#" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。">CitiWatch
-						</a>
-					</h3>
-					<p>This is a module link to "CitiWatch" page and those context
-						is only use for site occupancy................</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-sm-6 col-md-4 col-lg-3 ">
-			<div class="thumbnail">
-				<a href="#" title="Bootstrap 编码规范"><img class="lazy"
-					src="seaimg/stickup.png"
-					width="500" height="150"></a>
-				<div class="caption">
-					<h3>
-						<a href="#" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。">Utility
-							Bill Payment 
-						</a>
-					</h3>
-					<p>This is a module link to "Insurance" page and those context
-						is only use for site occupancy................</p>
-				</div>
-			</div>
-		</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/mui.js"></script>
+	<script type="text/javascript">
 		
-		<div class="col-sm-6 col-md-4 col-lg-3 ">
-			<div class="thumbnail">
-				<a href="#" title="Bootstrap 编码规范"><img class="lazy"
-					src="seaimg/stickup.png"
-					width="500" height="150"></a>
-				<div class="caption">
-					<h3>
-						<a href="#" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。">Mutual
-							Fund </a>
-					</h3>
-					<p>This is a module link to "Mutual Fund" page and those
-						context is only use for site occupancy.............</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-sm-6 col-md-4 col-lg-3 ">
-			<div class="thumbnail">
-				<a href="#" title="Bootstrap 编码规范"><img class="lazy"
-					src="seaimg/stickup.png"
-					width="500" height="150"></a>
-				<div class="caption">
-					<h3>
-						<a href="#" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。">Security
-							Brokerage </a>
-					</h3>
-					<p>This is a module link to "Security Brokerage" page and those
-						context is only use for site occupancy.........</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="col-sm-6 col-md-4 col-lg-3 ">
-			<div class="thumbnail">
-				<a href="#" title="Bootstrap 编码规范"><img class="lazy"
-					src="seaimg/stickup.png"
-					width="500" height="150"></a>
-				<div class="caption">
-					<h3>
-						<a href="#" title="Bootstrap 编码规范：编写灵活、稳定、高质量的 HTML 和 CSS 代码的规范。">Book
-							of Business </a>
-					</h3>
-					<p>This is a module link to "Book of Business" page and those
-						context is only use for site occupancy......</p>
-				</div>
-			</div>
-		</div>
-
-
-
-	</div>
-
-
-
-	<script src="controller/pageRedirectController.js"></script>
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
+		$(".optional").click(function() {
+			$(this).parents().children().removeClass("selectItem");
+			$(this).addClass("selectItem");
+		})
+	</script>
 </body>
 </html>
